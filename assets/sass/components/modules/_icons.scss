@@ -1,0 +1,48 @@
+.header__logo-first {
+
+    span {
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: url('../../../../assets/icons/Logo_e.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.header__logo-second {
+    
+    span {
+        display: block;
+        width: 26px;
+        height: 26px;
+        background: url('../../../../assets/icons/Logo_m.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.design__item:nth-child(3) {
+    
+    .design__img {
+        span {
+            display: block;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+        }
+
+        span:nth-child(1) {
+            background: $light_gradient;
+        }
+        span:nth-child(2) {
+            background: $dark_gradient;
+        }
+        span:nth-child(3) {
+            background: $green_gradient;
+        }
+        span:nth-child(4) {
+            background: $yellow_gradient;
+        }
+    }
+}

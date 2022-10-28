@@ -1,0 +1,66 @@
+/*! colors */
+
+$white: #FFFFFF;
+$dark_black: #000000;
+$black: #171717;
+$gray: #E5E5E5;
+$green: #78BD20;
+
+
+$light_gradient: linear-gradient(270deg, #BEF0FE 0%, #FFD6D3 100%);
+$yellow_gradient: linear-gradient(270deg, #FAEE61 0%, #FEF694 100%);
+$green_gradient: linear-gradient(270deg, #029965 0%, #66C1A2 100%);
+$dark_gradient: linear-gradient(270deg, #020202 0%, #666666 100%);
+
+/*! fonts */
+
+$font: PT Root UI, sans-serif;
+$medium: 500;
+$bold : 700;
+
+/*! mobile */
+
+$mob_title_size: 30px;
+$mob_subtitle_size: 22px;
+$mob_text_size: 14px;
+$mob_subtext_size: 12px;
+$mob_small_size: 10px;
+
+$mob_lh_title: 40px;
+$mob_lh_subtitle: 31px;
+$mob_lh_text: 21px;
+$mob_lh_subtext: 17px;
+$mob_lh_small: 14px;
+
+/*! tablet */
+
+$tab_title_size: 38px;
+$tab_subtitle_size: 30px;
+$tab_text_size: 14px;
+$tab_subtext_size: 14px;
+$tab_small_size: 14px;
+
+$tab_lh_title: 50px;
+$tab_lh_subtitle: 21px;
+$tab_lh_text: 21px;
+$tab_lh_subtext: 21px;
+$tab_lh_small: 21px;
+
+
+/*! desktop */
+
+$desk_title_size: 38px;
+$desk_subtitle_size: 30px;
+$desk_text_size: 16px;
+$desk_subtext_size: 14px;
+$desk_small_size: 14px;
+
+$desk_lh_title: 50px;
+$desk_lh_subtitle: 40px;
+$desk_lh_text: 24px;
+$desk_lh_subtext: 21px;
+$desk_lh_small: 21px;
+
+/*! sections */
+
+$sections: (design, video, accessories, apps);

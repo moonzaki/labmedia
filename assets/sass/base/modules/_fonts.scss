@@ -1,0 +1,42 @@
+.main__title {
+    @extend %title_font;
+    text-align: left;
+}
+.section-title {
+    @extend %subtitle_font;
+    margin: 19.4px 15px 31.3px 15px;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;   
+}
+.header__course-title {
+    @extend %small_text_font;
+}
+.header__smart {
+    @extend %small_text_font;
+}
+
+@each $section in $sections {
+    .#{$section}__text {
+        @extend %text_font;
+        padding: 0 15px 0 15px;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;   
+
+        p {
+            margin: 0 0 26px 0;
+        }
+    }
+}
+
+
+.subitem {
+    .design__text {
+        @extend %subtext_font;
+    }
+}

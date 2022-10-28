@@ -1,0 +1,129 @@
+%fonts {
+    font-family: $font;
+}
+
+%fonts_bold {
+    @extend %fonts;
+    font-weight: $bold;
+}
+%fonts_medium {
+    @extend %fonts;
+    font-weight: $medium;
+}
+
+%title_font {
+    @extend %fonts_bold;
+    font-size: $mob_title_size;
+    line-height: $mob_lh_title;
+
+    // @media screen and (min-width: 720px) and (max-widh: 999px) {
+    //     font-size: $tab_title_size;
+    //     line-height: $tab_lh_title;
+    // }
+    // @media screen and (min-width: 1000px) {
+    //     font-size: $desk_title_size;
+    //     line-height: $desk_lh_title;
+    // }
+}
+
+%subtitle_font {
+    @extend %fonts_bold;
+    font-size: $mob_subtitle_size;
+    line-height: $mob_lh_subtitle;
+    
+    // @media screen and (min-width: 720px) and (max-widh: 999px) {
+    //     font-size: $tab_subtitle_size;
+    //     line-height: $tab_lh_subtitle;
+    // }
+    // @media screen and (min-width: 1000px) {
+    //     font-size: $desk_subtitle_size;
+    //     line-height: $desk_lh_subtitle;
+    // }
+}
+
+%text_font {
+    @extend %fonts_medium;
+    font-size: $mob_text_size;
+    line-height: $mob_lh_text;
+    
+    // @media screen and (min-width: 720px) and (max-widh: 999px) {
+    //     font-size: $tab_text_size;
+    //     line-height: $tab_lh_text;
+    // }
+    // @media screen and (min-width: 1000px) {
+    //     font-size: $desk_text_size;
+    //     line-height: $desk_lh_text;
+    // }
+}
+
+%subtext_font {
+    @extend %fonts_medium;
+    font-size: $mob_subtext_size;
+    line-height: $mob_lh_subtext;
+    
+    // @media screen and (min-width: 720px) and (max-widh: 999px) {
+    //     font-size: $tab_subtext_size;
+    //     line-height: $tab_lh_subtext;
+    // }
+    // @media screen and (min-width: 1000px) {
+    //     font-size: $desk_subtext_size;
+    //     line-height: $desk_lh_subtext;
+    
+    // }
+}
+
+%small_text_font {
+    @extend %fonts_medium;
+    font-size: $mob_small_size;
+    line-height: $mob_lh_small;
+    
+    // @media screen and (min-width: 720px) and (max-widh: 999px) {
+    //     font-size: $tab_small_size;
+    //     line-height: $tab_lh_small;
+        
+    // }
+    // @media screen and (min-width: 1000px) {
+    //     font-size: $desk_small_size;
+    //     line-height: $desk_lh_small;
+    // }
+}
+
+
+%block_center {
+    display: block;
+    margin: 0 auto;
+}
+
+@each $section in $sections {
+    .#{$section}__img {
+        img {
+            display: block;
+            @extend %block_center;
+        }
+    }
+}
+
+%visibility_off {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+%list_column {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+%flex_row_div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
