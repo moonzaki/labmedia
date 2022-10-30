@@ -97,7 +97,6 @@
 @each $section in $sections {
     .#{$section}__img {
         img {
-            display: block;
             @extend %block_center;
         }
     }

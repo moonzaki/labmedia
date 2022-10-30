@@ -1,7 +1,7 @@
 .header__logo-first {
-
+    display: block;
     span {
-        display: block;
+        @extend .header__logo-first;
         width: 25px;
         height: 25px;
         background: url('../../../../assets/icons/Logo_e.svg');
@@ -13,7 +13,7 @@
 .header__logo-second {
     
     span {
-        display: block;
+        @extend .header__logo-first;
         width: 26px;
         height: 26px;
         background: url('../../../../assets/icons/Logo_m.svg');
@@ -26,7 +26,7 @@
     
     .design__img {
         span {
-            display: block;
+            @extend .header__logo-first;
             width: 28px;
             height: 28px;
             border-radius: 50%;
@@ -43,6 +43,49 @@
         }
         span:nth-child(4) {
             background: $yellow_gradient;
+        }
+    }
+}
+
+
+.video__item:nth-child(2) {
+    .video__img {
+        span {
+            display: block;
+            margin: 0 auto;
+            width: 46px;
+            height: 46px;
+            background: url('../icons/quality.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+.video__item:nth-child(3) {
+    .video__img {
+        span {
+            display: block;
+            margin: 0 auto;
+            width: 58px;
+            height: 58px;
+            background: url('../icons/stab.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+    }
+}
+.video__item:nth-child(4) {
+    .video__img {
+        span {
+            display: block;
+            margin: 0 auto;
+            width: 60px;
+            height: 60px;
+            background: url('../icons/slow.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            
         }
     }
 }
