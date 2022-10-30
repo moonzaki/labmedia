@@ -2,45 +2,22 @@
     position: relative;
     padding: 0 0 26px 0;
     &::after {
-        position: absolute;
-        content: '';
-        display: block;
-        margin: 0 auto;
-        width: 290px;
-        height: 1px;
+        @extend %bef_af_accessories;
         bottom: 0;
-        left: 0;
-        right: 0;
-        background: $gray;
     }
-
+    
     .accessories__item {
         display: flex;
         flex-direction: column;
         gap: 25px;
         margin: 0 15px 0 15px;
-        
-        .accessories__img {
-            // margin: 0 0 25px 0;
-            img {
-                
-            }
-        }
 
         .accessories__text {
             padding: 20px 0 0 0;
             position: relative;
             &::before {
-                position: absolute;
-                content: '';
-                display: block;
-                margin: 0 auto;
-                width: 290px;
-                height: 1px;
-                top: 0;
-                left: 0;
-                right: 0;
-                background: $gray;
+                @extend %bef_af_accessories;
+                top: 0;              
             }
         }
     }
@@ -50,15 +27,7 @@
         .accessories__text {
             @extend %subtext_font;
             &::after {
-                position: absolute;
-                content: '';
-                display: block;
-                margin: 0 auto;
-                width: 50px;
-                height: 1px;
-                top: 0;
-                left: 0;
-                background: $dark_black;
+                @extend %bef_af_accessories_item;
             }
         }    
     }
@@ -68,15 +37,7 @@
         .accessories__text {
             @extend %subtext_font;
             &::after {
-                position: absolute;
-                content: '';
-                display: block;
-                margin: 0 auto;
-                width: 50px;
-                height: 1px;
-                top: 0;
-                left: 0;
-                background: $dark_black;
+                @extend %bef_af_accessories_item;
             }
         }
         

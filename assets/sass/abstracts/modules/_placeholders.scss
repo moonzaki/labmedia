@@ -16,14 +16,8 @@
     font-size: $mob_title_size;
     line-height: $mob_lh_title;
 
-    // @media screen and (min-width: 720px) and (max-widh: 999px) {
-    //     font-size: $tab_title_size;
-    //     line-height: $tab_lh_title;
-    // }
-    // @media screen and (min-width: 1000px) {
-    //     font-size: $desk_title_size;
-    //     line-height: $desk_lh_title;
-    // }
+    @include text_720($tab_title_size, $tab_lh_title);
+    @include text_1000($desk_title_size, $desk_lh_title);
 }
 
 %subtitle_font {
@@ -31,29 +25,18 @@
     font-size: $mob_subtitle_size;
     line-height: $mob_lh_subtitle;
     
-    // @media screen and (min-width: 720px) and (max-widh: 999px) {
-    //     font-size: $tab_subtitle_size;
-    //     line-height: $tab_lh_subtitle;
-    // }
-    // @media screen and (min-width: 1000px) {
-    //     font-size: $desk_subtitle_size;
-    //     line-height: $desk_lh_subtitle;
-    // }
+    @include text_720($tab_subtitle_size, $tab_lh_subtitle);
+    @include text_1000($desk_subtitle_size, $desk_lh_title);
 }
 
 %text_font {
     @extend %fonts_medium;
     font-size: $mob_text_size;
     line-height: $mob_lh_text;
-    
-    // @media screen and (min-width: 720px) and (max-widh: 999px) {
-    //     font-size: $tab_text_size;
-    //     line-height: $tab_lh_text;
-    // }
-    // @media screen and (min-width: 1000px) {
-    //     font-size: $desk_text_size;
-    //     line-height: $desk_lh_text;
-    // }
+
+    @include text_720($tab_text_size, $tab_lh_text);
+    @include text_1000($desk_text_size, $desk_lh_text);
+
 }
 
 %subtext_font {
@@ -61,7 +44,7 @@
     font-size: $mob_subtext_size;
     line-height: $mob_lh_subtext;
     
-    // @media screen and (min-width: 720px) and (max-widh: 999px) {
+    // @media screen and (min-width: 720px) and (max-width: 999px) {
     //     font-size: $tab_subtext_size;
     //     line-height: $tab_lh_subtext;
     // }
@@ -77,7 +60,9 @@
     font-size: $mob_small_size;
     line-height: $mob_lh_small;
     
-    // @media screen and (min-width: 720px) and (max-widh: 999px) {
+    @include text_720($tab_small_size, $tab_lh_small);
+    @include text_1000($desk_small_size, $desk_lh_small);
+    // @media screen and (min-width: 720px) and (max-width: 999px) {
     //     font-size: $tab_small_size;
     //     line-height: $tab_lh_small;
         
@@ -125,4 +110,33 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+}
+
+%bef_af_accessories {
+    position: absolute;
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 290px;
+    height: 1px;
+    left: 0;
+    right: 0;
+    background: $gray;
+}
+
+%bef_af_accessories_item {
+    position: absolute;
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background: $dark_black;
+}
+
+%icons_block {
+    display: block;
+    margin:  0 auto;
 }

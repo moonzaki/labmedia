@@ -1,0 +1,26 @@
+.apps__content {
+
+    .apps__item {
+        margin: 0 15px 0 15px;
+        position: relative;
+        &::after {
+            @extend %bef_af_accessories;
+            bottom: -32px;
+        }
+        
+        .apps__img {
+            width: 75px;
+
+        }    
+
+        .apps__text {
+            @extend %subtext_font;
+            padding: 0 0 0 10px;
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+}
+

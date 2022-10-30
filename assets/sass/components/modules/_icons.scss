@@ -7,6 +7,14 @@
         background: url('../../../../assets/icons/Logo_e.svg');
         background-repeat: no-repeat;
         background-position: center;
+        
+        @media screen and (min-width: 720px) and (max-width: 999px) {
+            width: 35px;
+            height: 35px;
+            background: url('../../../../assets/icons/Logo_eBig.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
 }
 
@@ -19,6 +27,14 @@
         background: url('../../../../assets/icons/Logo_m.svg');
         background-repeat: no-repeat;
         background-position: center;
+
+        @media screen and (min-width: 720px) and (max-width: 999px) {
+            width: 35px;
+            height: 35px;
+            background: url('../../../../assets/icons/Logo_mBig.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
 }
 
@@ -51,41 +67,69 @@
 .video__item:nth-child(2) {
     .video__img {
         span {
-            display: block;
-            margin: 0 auto;
-            width: 46px;
-            height: 46px;
-            background: url('../icons/quality.svg');
-            background-repeat: no-repeat;
-            background-position: center;
+            @extend %icons_block;
+            @include icons($icon_size_60, $video_icon1);            
         }
     }
 }
 .video__item:nth-child(3) {
     .video__img {
         span {
-            display: block;
-            margin: 0 auto;
-            width: 58px;
-            height: 58px;
-            background: url('../icons/stab.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            
+            @extend %icons_block;
+            @include icons($icon_size_58, $video_icon2);            
         }
     }
 }
 .video__item:nth-child(4) {
     .video__img {
         span {
-            display: block;
-            margin: 0 auto;
-            width: 60px;
-            height: 60px;
-            background: url('../icons/slow.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            
+            @extend %icons_block;
+            @include icons($icon_size_60, $video_icon3);
+        }
+    }
+}
+
+.apps__item {
+    .apps__img {
+        span {
+            @extend %icons_block;
+        }
+    }
+}
+
+.apps__item:nth-child(1) {
+    .apps__img {
+        span {
+            @include icons($icon_size_60, $apps_icon1);
+        }
+    }
+}
+.apps__item:nth-child(2) {
+    .apps__img {
+        span {
+            @include icons($icon_size_60, $apps_icon2);
+        }
+    }
+}
+.apps__item:nth-child(3) {
+    .apps__img {
+        span {
+            @include icons($icon_size_60, $apps_icon3);
+        }
+    }
+}
+.apps__item:nth-child(4) {
+    .apps__img {
+        span {
+            @include icons($icon_size_60, $apps_icon4);
+        }
+    }
+}
+.apps__item:nth-child(5) {
+    .apps__img {
+        span {
+            @extend %icons_block;
+            @include icons($icon_size_60, $apps_icon5);
         }
     }
 }
