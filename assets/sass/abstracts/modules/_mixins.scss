@@ -1,0 +1,34 @@
+@mixin icons($size, $path) {
+    width: $size;
+    height: $size;
+    background: $path;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin visibility_off {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@mixin text_720 ($size, $lh) {
+    @media screen and (min-width: 720px) and (max-width: 999px) {
+        font-size: $size;
+        line-height: $lh;
+    }
+}
+
+@mixin text_1000 ($size, $lh) {
+    @media screen and (min-width: 1000px) {
+        font-size: $size;
+        line-height: $lh;
+    }
+}

@@ -1,0 +1,12 @@
+.navigation__list {
+    list-style: none;
+    @extend %list_column;
+    @extend %visibility_off;
+    
+    transform: translateY(-200%);
+
+    .navigation__link {
+        text-decoration: none;
+        color: $black;
+    }
+}

@@ -1,0 +1,125 @@
+.header__logo-first {
+    display: block;
+    span {
+        @extend .header__logo-first;
+        width: 25px;
+        height: 25px;
+        background: url('../../../../assets/icons/Logo_e.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        @media screen and (min-width: 720px) {
+            width: 35px;
+            height: 35px;
+            background: url('../../../../assets/icons/Logo_eBig.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+.header__logo-second {
+    span {
+        @extend .header__logo-first;
+        width: 26px;
+        height: 26px;
+        background: url('../../../../assets/icons/Logo_m.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media screen and (min-width: 720px) {
+            width: 35px;
+            height: 35px;
+            background: url('../../../../assets/icons/Logo_mBig.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+.design__item:nth-child(3) {
+    .design__img {
+        span {
+            @extend .header__logo-first;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+        }
+        span:nth-child(1) {
+            background: $light_gradient;
+        }
+        span:nth-child(2) {
+            background: $dark_gradient;
+        }
+        span:nth-child(3) {
+            background: $green_gradient;
+        }
+        span:nth-child(4) {
+            background: $yellow_gradient;
+        }
+    }
+}
+.video__item:nth-child(2) {
+    .video__img {
+        span {
+            @extend %icons_block;
+            @include icons($icon_size_60, $video_icon1);            
+        }
+    }
+}
+.video__item:nth-child(3) {
+    .video__img {
+        span {
+            @extend %icons_block;
+            @include icons($icon_size_58, $video_icon2);            
+        }
+    }
+}
+.video__item:nth-child(4) {
+    .video__img {
+        span {
+            @extend %icons_block;
+            @include icons($icon_size_60, $video_icon3);
+        }
+    }
+}
+.apps__item {
+    .apps__img {
+        span {
+            @extend %icons_block;
+        }
+    }
+}
+.apps__item:nth-child(1) {
+    .apps__img {
+        span {
+            @include icons($icon_size_60, $apps_icon1);
+        }
+    }
+}
+.apps__item:nth-child(2) {
+    .apps__img {
+        span {
+            @include icons($icon_size_60, $apps_icon2);
+        }
+    }
+}
+.apps__item:nth-child(3) {
+    .apps__img {
+        span {
+            @include icons($icon_size_60, $apps_icon3);
+        }
+    }
+}
+.apps__item:nth-child(4) {
+    .apps__img {
+        span {
+            @include icons($icon_size_60, $apps_icon4);
+        }
+    }
+}
+.apps__item:nth-child(5) {
+    .apps__img {
+        span {
+            @extend %icons_block;
+            @include icons($icon_size_60, $apps_icon5);
+        }
+    }
+}

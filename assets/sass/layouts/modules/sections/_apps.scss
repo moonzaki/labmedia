@@ -1,0 +1,46 @@
+.apps__content {
+    .apps__item {
+        margin: 0 15px 0 15px;
+        position: relative;
+        &::after {
+            @extend %bef_af_accessories;
+            bottom: -32px;
+        }
+        .apps__img {
+            width: 75px;
+        }    
+        .apps__text {
+            @extend %subtext_font;
+            padding: 0 0 0 10px;
+            p {
+                margin: 0;
+            }
+        }
+        @media screen and (min-width: 720px) and (max-width: 999px) {
+            margin: 0 0 0 0;
+            &::after {
+                content: null;
+                width: 0;
+                height: 0;
+            }
+            .apps__text {
+                padding: 0 10px 0 10px;
+            }
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .apps__item {
+            margin: 0;
+            max-width: 303px;
+            .apps__text {
+                padding: 0;
+            }
+            &::after {
+                content: null;
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+
+}
