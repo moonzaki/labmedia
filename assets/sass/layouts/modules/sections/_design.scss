@@ -11,9 +11,11 @@ picture {
     
     @media screen and (min-width: 720px) and (max-width: 999px) {
         padding: 0 0 35px 0;
-
     }
     
+    @media screen and (min-width: 1000px) {
+        padding: 0 0 0 0;
+    }
     &::after {
         position: absolute;
         content: '';
@@ -36,6 +38,14 @@ picture {
             margin: 0 auto;
         }
 
+        @media screen and (min-width: 1000px) {
+            max-width: 222px;
+            
+            .design__text {
+                @include text_1000($desk_subtext_size, $desk_lh_subtext);
+            }
+        }
+
     }
 
     .infinity-item {
@@ -49,6 +59,21 @@ picture {
         @media screen and (min-width: 720px) and (max-width: 999px) { 
             margin: 0 auto;
         }
+        @media screen and (min-width: 1000px) {
+            padding: 0;
+            margin: 6px 0 103px 0;
+
+            .design__img {
+                padding: 20px 0 0 0;
+            }
+
+            .design__text {
+                p {
+
+                    margin: 0 0 47px 0;
+                }
+            }
+        }
         .design__img {
             position: relative;
             margin: 0 0 18px 0;
@@ -60,6 +85,17 @@ picture {
                 width: 260px;
                 height: 1px;
                 background: $gray;
+            }
+
+            @media screen and (min-width: 1000px) {  
+                &::after {
+                    content: '';
+                    display: block;
+                    margin: 0 auto;
+                    width: 192px;
+                    height: 1px;
+                    background: $gray;
+                }
             }
         }
         
@@ -74,6 +110,10 @@ picture {
         
         .design__text {
             padding: 0;
+
+            @media screen and (min-width: 1000px) {
+                @include text_1000($desk_text_size, $desk_lh_text);
+            }
         }
 
         @media screen and (min-width: 720px) and (max-width: 999px) {
@@ -84,9 +124,13 @@ picture {
             }
         }
 
+        @media screen and (min-width: 1000px) {
+            margin: 6px auto 0 auto;
+        }
+
+
         .design__img {
             margin: 0 0 43px 0;
-
             &::after {
                 position: relative;
                 content: '';
@@ -98,14 +142,22 @@ picture {
                 bottom: -25px;
                 background: $gray;
             }
+            @media screen and (min-width: 1000px) {
+                margin: 0 0 44px 0;
+            }
         }
+
+
+
+
     }
     .design__item:nth-child(3) {
         margin: 39px 0 0 0;
-        
         @media screen and (min-width: 720px) and (max-width: 999px) { 
             margin: 50px 0 0 0;
-
+        }
+        @media screen and (min-width: 1000px) { 
+            margin: 6px 0 0 0;
         }
         .design__img {
             width: 60px;
@@ -114,45 +166,48 @@ picture {
             
             @media screen and (min-width: 720px) and (max-width: 999px) { 
                 padding: 0 0 0 30px;
-    
+            }
+            @media screen and (min-width: 1000px) { 
+                padding: 0 0 0 4px;
             }
         }
 
         .design__text {
             padding: 0 0 0 0;
             margin: 19px 0 0 0;
-
             @media screen and (min-width: 720px) and (max-width: 999px) { 
                 padding: 0 0 0 15px;
-                @include text_720($tab_text_size, $tab_lh_text);
+                @include text_1000($desk_text_size, $desk_lh_text);
+            }
+            @media screen and (min-width: 1000px) {
                 @include text_1000($desk_text_size, $desk_lh_text);
             }
         }
     }
     .design__item:nth-child(4) {
         margin: 39px 0 0 0;
-
         @media screen and (min-width: 720px) and (max-width: 999px) { 
             margin: 50px 0 0 0;
-
+        }
+        @media screen and (min-width: 1000px) { 
+            margin: 6px 0 0 0;
         }
         .design__img {
             width: 60px;
             height: 60px;
             margin: 0 auto;
             padding: 0 0 0 4px;
-            
             @media screen and (min-width: 720px) and (max-width: 999px) { 
                 margin: 0 41% 0 41%;
             }
         }
-
         .design__text {
             padding: 0 0 0 4px;
             margin: 19px 0 0 0;
-
             @media screen and (min-width: 720px) and (max-width: 999px) { 
-                @include text_720($tab_text_size, $tab_lh_text);
+                @include text_1000($desk_text_size, $desk_lh_text);
+            }
+            @media screen and (min-width: 1000px) {
                 @include text_1000($desk_text_size, $desk_lh_text);
             }
         }

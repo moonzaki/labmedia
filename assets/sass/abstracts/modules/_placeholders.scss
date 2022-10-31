@@ -43,16 +43,10 @@
     @extend %fonts_medium;
     font-size: $mob_subtext_size;
     line-height: $mob_lh_subtext;
+
+    @include text_720($tab_subtext_size, $tab_lh_subtext);
+    @include text_1000($desk_subtext_size, $desk_lh_subtext);
     
-    // @media screen and (min-width: 720px) and (max-width: 999px) {
-    //     font-size: $tab_subtext_size;
-    //     line-height: $tab_lh_subtext;
-    // }
-    // @media screen and (min-width: 1000px) {
-    //     font-size: $desk_subtext_size;
-    //     line-height: $desk_lh_subtext;
-    
-    // }
 }
 
 %small_text_font {
@@ -62,15 +56,7 @@
     
     @include text_720($tab_small_size, $tab_lh_small);
     @include text_1000($desk_small_size, $desk_lh_small);
-    // @media screen and (min-width: 720px) and (max-width: 999px) {
-    //     font-size: $tab_small_size;
-    //     line-height: $tab_lh_small;
-        
-    // }
-    // @media screen and (min-width: 1000px) {
-    //     font-size: $desk_small_size;
-    //     line-height: $desk_lh_small;
-    // }
+
 }
 
 
@@ -117,7 +103,9 @@
     content: '';
     display: block;
     margin: 0 auto;
-    width: 290px;
+    max-width: 950px;
+    min-width: 290px;
+    width: 100%;
     height: 1px;
     left: 0;
     right: 0;

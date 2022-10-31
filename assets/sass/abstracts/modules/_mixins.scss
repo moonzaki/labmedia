@@ -25,6 +25,7 @@
         line-height: $lh;
     }
 }
+
 @mixin text_1000 ($size, $lh) {
     @media screen and (min-width: 1000px) {
         font-size: $size;
