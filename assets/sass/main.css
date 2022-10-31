@@ -548,7 +548,7 @@ template {
 .header__logo-first span, .design__item:nth-child(3) .design__img span span, .header__logo-second span span {
   width: 25px;
   height: 25px;
-  background: url("../../../../assets/icons/Logo_e.svg");
+  background: url("../../assets/icons/Logo_e.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -556,7 +556,7 @@ template {
   .header__logo-first span, .design__item:nth-child(3) .design__img span span, .header__logo-second span span {
     width: 35px;
     height: 35px;
-    background: url("../../../../assets/icons/Logo_eBig.svg");
+    background: url("../../assets/icons/Logo_eBig.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -565,7 +565,7 @@ template {
 .header__logo-second span {
   width: 26px;
   height: 26px;
-  background: url("../../../../assets/icons/Logo_m.svg");
+  background: url("../../assets/icons/Logo_m.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -573,7 +573,7 @@ template {
   .header__logo-second span {
     width: 35px;
     height: 35px;
-    background: url("../../../../assets/icons/Logo_mBig.svg");
+    background: url("../../assets/icons/Logo_mBig.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -600,7 +600,7 @@ template {
 .video__item:nth-child(2) .video__img span {
   width: 60px;
   height: 60px;
-  background: url("../icons/quality.svg");
+  background: url("../../assets/icons/quality.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -608,7 +608,7 @@ template {
 .video__item:nth-child(3) .video__img span {
   width: 58px;
   height: 58px;
-  background: url("../icons/stab.svg");
+  background: url("../../assets/icons/stab.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -616,7 +616,7 @@ template {
 .video__item:nth-child(4) .video__img span {
   width: 60px;
   height: 60px;
-  background: url("../icons/slow.svg");
+  background: url("../../assets/icons/slow.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -624,7 +624,7 @@ template {
 .apps__item:nth-child(1) .apps__img span {
   width: 60px;
   height: 60px;
-  background: url("../../../../assets/icons/Smart_Switch.svg");
+  background: url("../../assets/icons/Smart_Switch.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -632,7 +632,7 @@ template {
 .apps__item:nth-child(2) .apps__img span {
   width: 60px;
   height: 60px;
-  background: url("../../../../assets/icons/Samsung_Health.svg");
+  background: url("../../assets/icons/Samsung_Health.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -640,7 +640,7 @@ template {
 .apps__item:nth-child(3) .apps__img span {
   width: 60px;
   height: 60px;
-  background: url("../../../../assets/icons/Bixby.svg");
+  background: url("../../assets/icons/Bixby.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -648,7 +648,7 @@ template {
 .apps__item:nth-child(4) .apps__img span {
   width: 60px;
   height: 60px;
-  background: url("../../../../assets/icons/Samsung_pay.svg");
+  background: url("../../assets/icons/Samsung_pay.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -656,7 +656,7 @@ template {
 .apps__item:nth-child(5) .apps__img span {
   width: 60px;
   height: 60px;
-  background: url("../../../../assets/icons/SmartThings.svg");
+  background: url("../../assets/icons/SmartThings.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
