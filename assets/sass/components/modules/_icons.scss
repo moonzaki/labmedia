@@ -4,13 +4,13 @@
         @extend .header__logo-first;
         width: 25px;
         height: 25px;
-        background: url('../../../../assets/icons/Logo_e.svg');
+        background: url('../../assets/icons/Logo_e.svg');
         background-repeat: no-repeat;
         background-position: center;
         @media screen and (min-width: 720px) {
             width: 35px;
             height: 35px;
-            background: url('../../../../assets/icons/Logo_eBig.svg');
+            background: url('../../assets/icons/Logo_eBig.svg');
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -21,14 +21,14 @@
         @extend .header__logo-first;
         width: 26px;
         height: 26px;
-        background: url('../../../../assets/icons/Logo_m.svg');
+        background: url('../../assets/icons/Logo_m.svg');
         background-repeat: no-repeat;
         background-position: center;
 
         @media screen and (min-width: 720px) {
             width: 35px;
             height: 35px;
-            background: url('../../../../assets/icons/Logo_mBig.svg');
+            background: url('../../assets/icons/Logo_mBig.svg');
             background-repeat: no-repeat;
             background-position: center;
         }
